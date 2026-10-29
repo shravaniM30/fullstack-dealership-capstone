@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Dealerships</title>
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    .contact-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 25px;
+    }
+    .contact-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+    .contact-content img {
+      max-width: 100%;
+      width: 420px;
+      height: auto;
+      border-radius: 8px;
+    }
+    .contact-details {
+      flex: 1;
+      min-width: 250px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light"
+       style="background-color: darkturquoise; min-height: 80px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/" style="font-size: 1.5rem;">Dealerships</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarText" aria-controls="navbarText"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="card contact-container">
+    <header class="text-center mb-4">
+      <h1>Contact Us</h1>
+      <p>We're here to help with your dealership questions and feedback.</p>
+    </header>
+
+    <section class="contact-content">
+      <img src="/static/contactus.png" alt="Contact our dealership support team">
+
+      <div class="contact-details">
+        <h2>Get in Touch</h2>
+        <p>Contact our support team for assistance with dealership information
+          and customer reviews.</p>
+        <p><strong>Address:</strong> Dealership Customer Support, 100 Main Street,
+          Chicago, IL 60601, USA</p>
+        <p><strong>Phone:</strong> <a href="tel:+13125550100">+1 312-555-0100</a></p>
+        <p><strong>Email:</strong>
+          <a href="mailto:support@example.com">support@example.com</a></p>
+        <p><strong>Support Hours:</strong> Monday–Friday, 9:00 AM–5:00 PM</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
