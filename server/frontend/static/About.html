@@ -1,0 +1,117 @@
+
+cat > ~/fullstack-dealership-capstone/server/frontend/static/About.html <<'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | Dealerships</title>
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    .about-banner {
+      text-align: center;
+      padding: 35px 20px;
+      background: #e6f7f7;
+    }
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      padding: 30px 15px;
+    }
+    .team-card {
+      width: 280px;
+      text-align: center;
+    }
+    .team-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .team-card .card-body {
+      overflow-wrap: anywhere;
+    }
+    .team-card .title {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    .team-card a {
+      color: #087f8c;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light"
+       style="background-color: darkturquoise; min-height: 80px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/" style="font-size: 1.5rem;">Dealerships</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarText" aria-controls="navbarText"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="card" style="width: 90%; margin: 35px auto;">
+    <header class="about-banner" name="about-header">
+      <h1>About Us</h1>
+      <p>Meet the team helping customers find the right car and dealership.</p>
+    </header>
+
+    <section class="team-container" aria-label="Our team">
+      <article class="card team-card">
+        <img class="card-img-top" src="/static/person.png"
+             alt="Team representative">
+        <div class="card-body">
+          <p class="title">Alex Morgan</p>
+          <p>Customer Experience Manager</p>
+          <p class="card-text">Alex helps customers navigate dealership information
+            and works to make every customer interaction straightforward.</p>
+          <p><a href="mailto:alex.morgan@example.com">alex.morgan@example.com</a></p>
+        </div>
+      </article>
+
+      <article class="card team-card">
+        <img class="card-img-top" src="/static/person.png"
+             alt="Team representative">
+        <div class="card-body">
+          <p class="title">Jordan Lee</p>
+          <p>Dealer Relations Specialist</p>
+          <p class="card-text">Jordan coordinates dealership information and helps
+            keep branch details accurate and useful for visitors.</p>
+          <p><a href="mailto:jordan.lee@example.com">jordan.lee@example.com</a></p>
+        </div>
+      </article>
+
+      <article class="card team-card">
+        <img class="card-img-top" src="/static/person.png"
+             alt="Team representative">
+        <div class="card-body">
+          <p class="title">Taylor Reed</p>
+          <p>Website Support Specialist</p>
+          <p class="card-text">Taylor supports the website experience and helps
+            customers share feedback about their dealership visits.</p>
+          <p><a href="mailto:taylor.reed@example.com">taylor.reed@example.com</a></p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
+EOF
